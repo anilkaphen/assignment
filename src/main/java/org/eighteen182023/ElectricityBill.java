@@ -4,7 +4,7 @@ public class ElectricityBill {
 
     public static  void main(String [] args ){
 
-        double units = 0,b;
+        double units = 350,b;
 
         b= calculateElectricityBill(units);
 
