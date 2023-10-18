@@ -1,12 +1,25 @@
 package org.twenty092023;
 
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+
 public class FindPrimeNumberTest {
 
-    FindPrimeNumber findPrimeNumber;
+    private FindPrimeNumber findPrimeNumber;
 
-    void test() {
+    @Before
+    public void setup(){
         findPrimeNumber = new FindPrimeNumber();
-        findPrimeNumber.findPrimeNumberForGivenRange(2,3);
-        findPrimeNumber.isPrimeNumber(8);
+    }
+
+    @Test
+    public void findPrimeNumberForGivenRangeWhenNumberIsNotPrime() {
+        Assert.assertEquals(findPrimeNumber.isPrimeNumber(8), false);
+    }
+
+    @Test
+    public void findPrimeNumberForGivenRangeWhenNumberIsPrime() {
+        Assert.assertEquals(findPrimeNumber.isPrimeNumber(7), true);
     }
 }
