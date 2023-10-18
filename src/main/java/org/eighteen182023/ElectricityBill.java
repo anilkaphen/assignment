@@ -12,7 +12,6 @@ public class ElectricityBill {
         System.out.println("Bill to pay : " + b);
 
     }
-
     public static double calculateElectricityBill(double units){
 
         {
@@ -25,7 +24,6 @@ public class ElectricityBill {
             else if(units>300)
                 billpay=100*30+200 *2+(units-300)*3;
             return billpay;
-
 
         }}}
 
