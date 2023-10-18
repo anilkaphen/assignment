@@ -1,6 +1,5 @@
 package org.eighteen182023;
 
-
 public class ElectricityBill {
 
     public static  void main(String [] args ){
@@ -10,10 +9,8 @@ public class ElectricityBill {
         b= calculateElectricityBill(units);
 
         System.out.println("Bill to pay : " + b);
-
     }
     public static double calculateElectricityBill(double units){
-
         {
             double billpay=0;
 
