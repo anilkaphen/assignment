@@ -1,26 +1,7 @@
 package org.twentyOctober2023;
 
 public class GretestSmallest {
-    /*
-    public static void main (String[] args){
-int x=10;
-int y=5;
-int z =15;
-        findLargest(x,y,z);
-        findLargestTwo(x,y,z);
-        findSmallest(x,y,z);
 
-    }
-
-      void static  findLargest(int x,int y,int z){
-
-
-    }
-
-}
-int num1,num2,num3;
-
-     */
     public static void main (String[] args){
 
         int num1=10,num2=15,num3=15,num4=5;
@@ -52,7 +33,7 @@ static void findTwoLargest(int num1,int num2){
         else{
             System.out.println("\n both  number are same");}
 
-}}
+}
 static void findSmallest(int num1,int num2, int num3, int num4){
 
     if(num1<=num2 && num1<=num3 && num1<=num4 ){
