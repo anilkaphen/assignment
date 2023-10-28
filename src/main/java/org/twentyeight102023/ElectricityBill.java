@@ -3,7 +3,7 @@ package org.twentyeight102023;
 public class ElectricityBill {
     public static void main (String args[]){
 
-        int units = 250;
+        int units =350;
         System.out.println("Total amount of "+ units +" units: ");
         System.out.println(
                 calculateBill(units));
