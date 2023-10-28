@@ -1,7 +1,6 @@
 package org.twentyeight102023;
 
 public class ElectricityBill {
-
     public static void main (String args[]){
 
         int units = 250;
@@ -9,8 +8,6 @@ public class ElectricityBill {
         System.out.println(
                 calculateBill(units));
     }
-
-
     public static int calculateBill(int units){
         {
             int first_unit = 10;
@@ -41,8 +38,5 @@ public class ElectricityBill {
             }
             return 0;
         }
-
-
-
     }
 }
