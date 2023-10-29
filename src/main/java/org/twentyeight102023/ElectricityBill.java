@@ -6,8 +6,7 @@ public class ElectricityBill {
         int units =350;
         System.out.println("Total amount of "+ units +" units: ");
         System.out.println(
-                calculateBill(units));
-    }
+                calculateBill(units));}
     public static int calculateBill(int units){
         {
             int first_unit = 10;
