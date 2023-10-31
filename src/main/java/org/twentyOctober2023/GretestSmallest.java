@@ -1,52 +1,46 @@
 package org.twentyOctober2023;
 
 public class GretestSmallest {
-
     public static void main(String[] args) {
-
+        GretestSmallest gretestSmallest = new GretestSmallest();
         int num1 = 10, num2 = 15, num3 = 20, num4 = 5;
-        findLargest(num1, num2, num3);
-        findTwoLargest(num1, num2);
-        findSmallest(num1, num2, num3, num4);
+        gretestSmallest.findLargest(num1, num2, num3);
+        gretestSmallest.findTwoLargest(num1, num2);
+        gretestSmallest.findSmallest(num1, num2, num3, num4);
+
     }
 
-    static void findLargest(float num1, float num2, float num3) {
+    public int findLargest(int num1, int num2, int num3) {
         if (num1 >= num2 && num1 >= num3) {
-            System.out.println(num1 + " is the max number");
+            return num1;
 
         } else if (num2 >= num1 && num2 >= num3) {
-            System.out.println(num2 + " is the max number");
-
+            return num2;
         } else {
-            System.out.println(num3 + " is the max number");
-
+            return num3;
         }
     }
 
-  public   static void findTwoLargest(int num1, int num2) {
+    public int findTwoLargest(int num1, int num2) {
         if (num1 >= num2) {
-            System.out.println(num1 + " is the max number");
+            return num1;
         } else if (num2 >= num1) {
-            System.out.println(num2 + " is the max number");
+            return num2;
         } else {
-            System.out.println("\n both  number are same");
-        }
 
+        }
+        return num2;
     }
 
-    static void findSmallest(int num1, int num2, int num3, int num4) {
-
+    public int findSmallest(int num1, int num2, int num3, int num4) {
         if (num1 <= num2 && num1 <= num3 && num1 <= num4) {
-            System.out.println(num1 + " is the min number");
-
+            return num1;
         } else if (num2 <= num1 && num2 <= num3 && num2 <= num4) {
-            System.out.println(num2 + " is the min number");
-
+            return num2;
         } else if (num3 <= num4 && num3 <= num2 && num3 <= num1) {
-            System.out.println(num3 + " is the min number");
-
+            return num3;
         } else {
-            System.out.println("\n all  number are same");
+            return num4;
         }
     }
 }
