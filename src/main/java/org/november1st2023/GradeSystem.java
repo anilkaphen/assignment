@@ -27,16 +27,16 @@ public class GradeSystem {
         average = total / 5;
         percentage = total / 500 * 100;
 
-        if (average >= 75) {
+        if (average >= 75 && sub1>=75 && sub2>=75 && sub3>=75 && sub4>=75 && sub5>=75) {
             percentage = total / 500 * 100;
             return percentage;
-        } else if (average >= 60) {
+        } else if (average >= 60 && sub1>=60 && sub2>=60 && sub3>=60 && sub4>=60 && sub5>=60) {
             percentage = total / 500 * 100;
             return percentage;
-        } else if (average >= 50) {
+        } else if (average >= 50 && sub1>=50 && sub2>=50 && sub3>=50 && sub4>=50 && sub5>=50) {
             percentage = total / 500 * 100;
             return percentage;
-        } else if (average <= 40) {
+        } else if (average <= 40 && sub1>=50 && sub2>=40 && sub3>=40 && sub4>=50 && sub5>=50) {
             percentage = total / 500 * 100;
             return percentage;
         } else

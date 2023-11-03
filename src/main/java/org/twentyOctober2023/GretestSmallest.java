@@ -1,7 +1,7 @@
 package org.twentyOctober2023;
 
 public class GretestSmallest {
-    public static void main(String[] args) {
+    public static void main( String[] args) {
         GretestSmallest gretestSmallest = new GretestSmallest();
         int num1 = 10, num2 = 15, num3 = 20, num4 = 5;
         gretestSmallest.findLargest(num1, num2, num3);
