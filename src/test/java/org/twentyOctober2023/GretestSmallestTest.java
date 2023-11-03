@@ -20,7 +20,6 @@ public class GretestSmallestTest {
         Assert.assertEquals(gretestSmallest.findTwoLargest(15, 18), 18);
     }
 
-
     @Test
     public void findTwoLargestNumberWhenSecondNumberIsSmall() {
 
@@ -43,14 +42,10 @@ public class GretestSmallestTest {
 
         Assert.assertEquals(gretestSmallest.findLargest(2, 22, 25), 25);
     }
-
     @Test
     public void findSmallestForFourNumber() {
         Assert.assertEquals(gretestSmallest.findSmallest(14, 15, 6, 10), 6);
-
-
     }
-
     @Test
     public void findSmallestForFourNumberWhen2ndNumberIsSmall() {
         Assert.assertEquals(gretestSmallest.findSmallest(14, 6, 15, 10), 6);
