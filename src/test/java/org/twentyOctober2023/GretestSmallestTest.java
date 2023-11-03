@@ -8,7 +8,6 @@ public class GretestSmallestTest {
 
     private GretestSmallest gretestSmallest;
 
-
     @Before
     public void setup() {
         gretestSmallest = new GretestSmallest();
@@ -37,21 +36,25 @@ public class GretestSmallestTest {
 
         Assert.assertEquals(gretestSmallest.findLargest(155, 225, 2), 225);
     }
+
     @Test
     public void findLargestForThreeNumberWhen3rdNumberIsLarge() {
 
         Assert.assertEquals(gretestSmallest.findLargest(2, 22, 25), 25);
     }
+
     @Test
     public void findSmallestForFourNumber() {
         Assert.assertEquals(gretestSmallest.findSmallest(14, 15, 6, 10), 6);
     }
+
     @Test
     public void findSmallestForFourNumberWhen2ndNumberIsSmall() {
         Assert.assertEquals(gretestSmallest.findSmallest(14, 6, 15, 10), 6);
 
 
     }
+
     @Test
     public void findSmallestForFourNumberWhen3rdNumberIsSmall() {
         Assert.assertEquals(gretestSmallest.findSmallest(14, 12, 5, 10), 5);
