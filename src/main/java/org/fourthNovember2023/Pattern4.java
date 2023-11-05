@@ -2,18 +2,28 @@ package org.fourthNovember2023;
 
 public class Pattern4 {
 
-    public static void main(String args[]) {
+    public static void StarleftTriangle(int k) {
+        int a, b;
 
-        int i, j, k, star = 5;
-        for (i = 0; i <= star; i++) {
-            for (j = 1; j <= star - i; j++) {
+        for (a = 0; a < k; a++) {
+
+            for (b = 2 * (k - a); b >= 0; b--) {
+
                 System.out.print(" ");
             }
-            for (k = 0; k <= i; k++) {
-                System.out.print("*");
-            }
-            System.out.println("");
-        }
 
+            for (b = 0; b <= a; b++) {
+
+                System.out.print("* ");
+            }
+
+            System.out.println();
+        }
+    }
+
+
+    public static void main(String args[]) {
+        int k = 5;
+        StarleftTriangle(k);
     }
 }

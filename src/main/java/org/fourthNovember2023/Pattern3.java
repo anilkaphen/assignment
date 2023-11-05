@@ -1,6 +1,7 @@
 package org.fourthNovember2023;
 
 public class Pattern3 {
+    
     public static void main(String args[]) {
 
         int i, j, k, star = 5;

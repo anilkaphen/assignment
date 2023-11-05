@@ -1,17 +1,25 @@
 package org.fourthNovember2023;
 
 public class Star1 {
-    public static void main(String args[]) {
+    public static void StarRightTriangle(int n)
+    {
+        int a, b;
 
-        int i, j, star = 5;
+        for (a = 0; a < n; a++) {
 
-        for (i = 0; i < star; i++) {
+            for (b = 0; b <= a; b++) {
 
-            for (j = 0; j <= i; j++) {
-                System.out.print("*");
+                System.out.print("* ");
             }
+
             System.out.println();
         }
+    }
+
+    public static void main(String args[])
+    {
+        int k = 5;
+        StarRightTriangle(k);
     }
 }
 
