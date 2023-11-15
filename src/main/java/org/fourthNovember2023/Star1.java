@@ -1,7 +1,7 @@
 package org.fourthNovember2023;
 
 public class Star1 {
-    public static void StarRightTriangle(int n)
+    public int StarRightTriangle(int n)
     {
         int a, b;
 
@@ -14,12 +14,16 @@ public class Star1 {
 
             System.out.println();
         }
+        return n;
     }
 
-    public static void main(String args[])
+    public static void   main(String args[])
     {
+        Star1 star1 = new Star1();
         int k = 5;
-        StarRightTriangle(k);
+      star1.StarRightTriangle(k);
+
     }
+
 }
 
