@@ -3,8 +3,9 @@ public class StringUtill {
     public static void main(String[] args) {
         StringUtill stringUtill = new StringUtill();
         substringCount("aa bb cc dd ee dd mm nn ss", "dd");
-        stringUtill.palindrome("rotor");
+        stringUtill.palindrome("one two three");
         System.out.println(stringUtill.Charcount1("Apple ball"));
+       System.out.println (stringUtill.reverseString("one two three"));
     }
 
     private static void substringCount(String input, String substing) {
@@ -37,6 +38,14 @@ public class StringUtill {
             i++;
         }
         return i;
+    }
+    public String reverseString(String str) {
+        String res = "";
+
+        for (int i = str.length() - 1; i >= 0; i--) {
+            res = res + str.charAt(i);
+        }
+        return res;
     }
 }
 
