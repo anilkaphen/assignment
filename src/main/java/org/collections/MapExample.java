@@ -5,11 +5,11 @@ import java.util.*;
 public class MapExample {
     public static void main(String[] args) {
 //        hashMapExample();
-//        linkedHashMapExample();
-//        treeHashMapExample();
+//      linkedHashMapExample();
+        treeHashMapExample();
 
-        Map<Integer, Employee> map  = getEmployees();
-        map.forEach((k, v) -> System.out.println("Key: " + k + " ,Value: " + v));
+      //  Map<Integer, Employee> map  = getEmployees();
+      //  map.forEach((k, v) -> System.out.println("Key: " + k + " ,Value: " + v));
     }
 
     private static Map<Integer, Employee> getEmployees() {
