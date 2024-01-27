@@ -8,12 +8,13 @@ public class MapExample {
 //      linkedHashMapExample();
         treeHashMapExample();
 
-      //  Map<Integer, Employee> map  = getEmployees();
-      //  map.forEach((k, v) -> System.out.println("Key: " + k + " ,Value: " + v));
+        //  Map<Integer, Employee> map  = getEmployees();
+        //  map.forEach((k, v) -> System.out.println("Key: " + k + " ,Value: " + v));
     }
 
     private static Map<Integer, Employee> getEmployees() {
         Map<Integer, Employee> map = new TreeMap<>();
+
         map.put(11, new Employee(1, "Manoj", 30, 8000, true, "Pune"));
         map.put(2, new Employee(2, "Gopi", 40, 12000, true, "Muz"));
         map.put(6, new Employee(3, "Pankaj", 50, 9000, true, "Patna"));
