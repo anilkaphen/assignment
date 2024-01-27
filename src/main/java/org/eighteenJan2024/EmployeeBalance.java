@@ -3,6 +3,7 @@ import java.util.*;
 
 public class EmployeeBalance {
     public static void main(String[] args) {
+        EmployeeBalance employeeBalance = new EmployeeBalance();
 
         List<Account> accounts = Arrays.asList(new Account("Mohan", true, "01/03/1995", 45678, 876, "pune"),
                 new Account("Sohan", true, "01/03/1993", 45679, 890, "patna"),
@@ -14,14 +15,14 @@ public class EmployeeBalance {
                 new Account("tannu", true, "06/08/1994", 45098, 9999, "indore"),
                 new Account("anshu", true, "06/08/1989", 40098, 1000, "delhi"));
 
-        int avg = getAvg(accounts);
+        int avg = employeeBalance.getAvg(accounts);
         System.out.println("The balance of the List: " + avg);
         List<Account> list1 = getBalanceByCity(accounts, "indore");
         System.out.println("The balance of the city: " + list1);
         List<Account> list2 = getMinBal(accounts, 1000);
         System.out.println("The MIn  city balance: " + list2);
     }
-    public static int getAvg(List<Account> accounts) {
+    public  int getAvg(List<Account> accounts) {
         int sum = 0, avg;
         for (int i = 0; i < accounts.size(); i++)
             sum += accounts.get(i).getBalance();
