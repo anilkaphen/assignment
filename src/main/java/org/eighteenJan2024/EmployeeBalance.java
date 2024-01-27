@@ -1,5 +1,8 @@
 package org.eighteenJan2024;
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class EmployeeBalance {
     public static void main(String[] args) {
@@ -17,18 +20,22 @@ public class EmployeeBalance {
 
         int avg = employeeBalance.getAvg(accounts);
         System.out.println("The balance of the List: " + avg);
+
         List<Account> list1 = getBalanceByCity(accounts, "indore");
         System.out.println("The balance of the city: " + list1);
+
         List<Account> list2 = getMinBal(accounts, 1000);
         System.out.println("The MIn  city balance: " + list2);
     }
-    public  int getAvg(List<Account> accounts) {
+
+    public int getAvg(List<Account> accounts) {
         int sum = 0, avg;
         for (int i = 0; i < accounts.size(); i++)
             sum += accounts.get(i).getBalance();
         avg = sum / accounts.size();
         return avg;
     }
+
     private static List<Account> getBalanceByCity(List<Account> accounts, String city) {
         int bal;
         String c;
@@ -41,6 +48,7 @@ public class EmployeeBalance {
         }
         return list;
     }
+
     private static List<Account> getMinBal(List<Account> accounts, int balance) {
         int min = 0;
         List<Account> list1 = new ArrayList<>();
