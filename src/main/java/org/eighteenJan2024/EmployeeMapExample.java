@@ -1,18 +1,56 @@
 package org.eighteenJan2024;
 
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
+
 public class EmployeeMapExample {
 
     public static void main(String[] args) {
+        EmployeeMapExample employeeBalance = new EmployeeMapExample();
+        Map<Integer, Account> map = employeeBalance.getAccountAvgBalance();
+        double avg = employeeBalance.getAvg(map);
+        System.out.println(avg);
 
     }
-    private static Map<Integer, Account> getAccountAvgBalance() {
-        Map<Integer, Account> map = new TreeMap<>();
-        map.put(5, new Account("sohan", true, "01/01/95", 1111, 2022, "patna"));
-        map.put(6, new Account("mohan", false, "02/02/2023", 222, 6666, "Gaya"));
-        map.put(7, new Account("rohan", true, "03/03/2000", 5555, 606060, "purniya"));
-        map.put(8, new Account("tiger", true, "03/03/2003", 5555, 8989, "pune"));
+
+    private Map<Integer, Account> getAccountAvgBalance() {
+        Map<Integer, Account> map = new HashMap<>();
+        map.put(5, new Account("sohan", true, "01/01/95", 1111, 5000, "patna"));
+        map.put(6, new Account("mohan", false, "02/02/2023", 222, 6000, "Gaya"));
+        map.put(7, new Account("rohan", true, "03/03/2000", 5555, 7000, "purniya"));
+        map.put(8, new Account("tiger", true, "03/03/2003", 5555, 2000, "pune"));
+
+
+//        for (Integer a : map.keySet()) {
+//            System.out.println("key :" + a + "value :" + map.get(a));
+//        }
+
         return map;
+
     }
-}
+
+    public int getAvg(Map<Integer, Account> map) {
+        int sum = 0;
+        for (Map.Entry<Integer, Account> e : map.entrySet()) {
+            sum = sum + e.getValue().getBalance();
+        }
+        return sum / map.size();
+
+
+    }
+
+    public int getBalanceByCity(Map<Integer, Account> map) {
+       // for (Map.Entry<Integer, Account> e : map.entrySet()){
+        for (Account a : map.values()){
+         if(a.getCity().equals(map.values())){
+             map.put(Integer,a);
+
+         }
+
+        }
+        return map;
+
+        }
+
+
+    }
+
