@@ -65,4 +65,16 @@ public class Account {
     public void setCity(String city) {
         this.city = city;
     }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "name='" + name + '\'' +
+                ", gender=" + gender +
+                ", dob='" + dob + '\'' +
+                ", accountnumber=" + accountnumber +
+                ", balance=" + balance +
+                ", city='" + city + '\'' +
+                '}';
+    }
 }
